@@ -1,0 +1,566 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* За пълен екран */
+  animation: changeBackground 18s infinite; /* Променете 10s на 2s за 2 секунди */
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url('./images/images000.jpg');
+  }
+
+  10% {
+    background-image: url('./images/images1.jpg');
+  }
+
+  20% {
+    background-image: url('./images/images13.jpg');
+  }
+
+  30% {
+    background-image: url('./images/images3.jpg');
+  }
+
+  40% {
+    background-image: url('./images/images4.jpg');
+  }
+
+  50% {
+    background-image: url('./images/images5.jpg');
+  }
+  60% {
+    background-image: url('./images/images8.jpg');
+  }
+  70% {
+    background-image: url('./images/images9.jpeg');
+  }
+  80% {
+    background-image: url('./images/images12.jpg');
+  }
+  90% {
+    background-image: url('./images/images2.jfif');
+  }
+  100% {
+    background-image: url('./images/images6.jpg');
+  }
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #11e3dc rgb(224, 224, 236) white white white;
+  color: #f0e7e7;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.navigation a {
+  color: #ece4e4;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+
+
+h2 {
+  color: #01090e;
+  width: 20%;
+  margin-left: 5%;
+  position: relative;
+}
+
+.home-container {
+  text-align:center;
+  padding: 280px;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: #e3eff2;
+}
+
+.home-container p {
+  font-size: 2.5rem;
+  color: #c8e8eb ;
+  margin-top: 20px;
+}
+
+
+/* Contact.css */
+
+.contact-container {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 100px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  margin: 50px;
+  padding: 50px;
+  color: #fff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-container:hover {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.contact-container h2 {
+  color: #efeee9;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-container h3 {
+  color: #edf1e8;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.contact-container p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #4d94ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #1a75ff;
+}
+
+/* KidsTraining.css */
+
+.services-container {
+  padding: 40px;
+  text-align: center;
+}
+
+h2 {
+  color: #ff6f61; /* Цвят на заглавието */
+}
+
+p {
+  font-size: 1.2rem;
+  color: #4f4f4f; /* Цвят на текста */
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 1rem;
+  color: #6b6b6b; /* Цвят на елементите в списъка */
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0; /* Разделяща линия между елементите */
+}
+
+/* Анимации */
+
+.services-container {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+}
+
+.services-container-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* ExtraServices*/
+.services-container {
+  margin: 50px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-container h2 {
+  color: #0c0a09;
+}
+
+.services-container p {
+  font-size: 1.2rem;
+  color: #050101;
+  margin-bottom: 20px;
+}
+
+.services-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-container li {
+  font-size: 1.1rem;
+  color: #3b5998; /* Син цвят */
+  margin-bottom: 8px;
+}
+
+.services-container li:before {
+  content: '\2022'; /* Unicode за точка */
+  color: #3b5998; /* Син цвят */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Services Container */
+
+.services-container {
+  margin: 50px;
+  padding: 70px;
+  background-color: rgba(242, 234, 234, 0.947); /* Прозрачен бял цвят */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-container h2 {
+  color: #0c0a09;
+}
+
+.services-container p {
+  font-size: 1.2rem;
+  color: #050101;
+  margin-bottom: 20px;
+}
+
+.services-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-container li {
+  font-size: 1.1rem;
+  color: #3b5998; /* Син цвят */
+  margin-bottom: 8px;
+}
+
+.services-container li:before {
+  content: '\2022'; /* Unicode за точка */
+  color: #3b5998; /* Син цвят */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+/* News Container */
+
+.news-container {
+  margin: 10px auto; /* Центриране по хоризонтала */
+  padding: 20px;
+  background-color: #eaf4fa; /* Цвят на фона */
+  border: 1px solid #bdd5e1; /* Цвят на границата */
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  text-align: center; /* Центриране на текста */
+}
+
+.news-container h2 {
+  color: #043c52; /* Цвят на заглавието */
+  margin: 0; /* Променено за центриране */
+  text-align:inline-block; /* Добавено за центриране */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.news-container p {
+  font-size: 1.2rem;
+  color: #0d4163; /* Цвят на текста */
+  margin-bottom: 20px;
+}
+
+.news-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news-container li {
+  font-size: 1.1rem;
+  color: #205c7c; /* Цвят на новините */
+  margin-bottom: 8px;
+}
+
+.news-container li:before {
+  content: '\2022'; /* Unicode за точка */
+  color: #205c7c; /* Цвят на новините */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.news-menu {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 5px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* online training */
+.online-training-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.online-training-item {
+  width: 300px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.online-training-item:hover {
+  transform: scale(1.05);
+}
+
+.training-details {
+  padding: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Optional: Add a stylish play button overlay */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.online-training-item:hover .play-button {
+  opacity: 1;
+}
+
+/* Optional: Add a subtle gradient overlay on hover */
+.gradient-overlay {
+  position: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  border-radius: 80px;
+  pointer-events: none;
+}
+
+.online-training-item:hover .gradient-overlay {
+  opacity: 5;
+}
+
+/* Добавете стил за заглавие и описание, адаптирайте според нуждите си */
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Опционален стил за контейнера с видеото */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Стил за показване на заглавие върху видеото, ако е необходимо */
+.video-title {
+  position: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 8px;
+  font-size: 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* DietList */
+
+.diet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.diet-item {
+  margin: 10px;
+  padding: 20px;
+  border: 10px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  color: #f20b0b; /* Set text color to a dark color */
+}
+
+.diet-item:hover {
+  background-color: #f0f0f0;
+}
+
+.diet-details-container {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95); /* Adjust alpha value for less transparency */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  color: #100101; /* Set text color to a dark color */
+}
+
+.diet-details-container h2 {
+  color: #043c52; /* Set a color that stands out */
+  font-size: 1.5rem; /* Increase font size for headings */
+  margin-bottom: 15px;
+}
+
+.diet-details-container p {
+  font-size: 1.2rem;
+  color: #555; /* Adjust text color to a slightly darker shade */
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #043c52; /* Match the color of headings */
+  color: #05090e; /* Set text color to white */
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #021725;
+}
+/* Food Container */
+
+.food-container {
+  margin: 50px;
+  padding: 50px;
+  background-color: #eaf4fa;
+  border: 1px solid #bdd5e1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: flex;
+  transition: transform 0.3s ease-in-out; /* Add a simple transition for animation */
+}
+
+.food-container:hover {
+  transform: scale(1.05); /* Increase size on hover */
+}
+
+.food-container h2 {
+  color: #043c52;
+}
+
+.food-container p {
+  font-size: 1.2rem;
+  color: #0d4163;
+  margin-bottom: 20px;
+}
+
+.food-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.food-container li {
+  font-size: 1.1rem;
+  color: #205c7c;
+  margin-bottom: 8px;
+}
+
+.food-container li:before {
+  content: '\2022';
+  color: #205c7c;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
